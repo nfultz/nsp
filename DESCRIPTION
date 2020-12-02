@@ -9,3 +9,5 @@ Description: Narrowest Significance Pursuit (NSP) is a general and flexible
 methodology for automatically detecting localised regions in data sequences
 which each must contain a change-point, at a prescribed global significance level.
 License: TODO
+Imports:
+  lpSolve
