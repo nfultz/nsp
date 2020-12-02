@@ -1,8 +1,3 @@
-# Software to accompany P. Fryzlewicz (2020) "Narrowest Significance Pursuit: inference for multiple change-points in linear models".
-# Please install R package "lpSolve" first, and then source the current file into R.
-# Please read the descriptions of the nsp_* functions below.
-# Please let me know (p.fryzlewicz@lse.ac.uk) of any omissions/errors/etc.
-
 
 #' Generic NSP function.
 #' 
