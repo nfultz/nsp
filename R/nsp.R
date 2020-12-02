@@ -4,26 +4,36 @@
 # Please let me know (p.fryzlewicz@lse.ac.uk) of any omissions/errors/etc.
 
 
-library(lpSolve)
-load("wiener_holder_norms.txt")
-
-
+#' Generic NSP function.
+#' 
+#' Do not use unless you know what 'thresh' value to set. Use one of the nsp_* functions below (without _selfnorm) instead.
+#'
+#' @param x               data (referred to in the paper as Y).
+#' @param constraints     design matrix (referred to in the paper as X).
+#' @param M               number of intervals to draw; this implementation uses a deterministic equispaced grid for drawing intervals.
+#' @param thresh          threshold value (lambda_alpha in the paper).
+#' @param overlap         FALSE means no overlap, TRUE means an overlap. See Section 4 of the paper.
+#' @param buffer          set to zero if no autoregression present in constraints; otherwise set to the order of the autoregression.
+#'
+#' @return 	object of a class with the following two fields -
+#' intervals - data frame whose first two columns are start- and end-points (respectively) of the detected intervals of significance;
+#'    the third column are the corresponding dyadic multiresolution sup-norms.
+#' threshold.used - thresh.
+#'
+#' @importFrom lpSolve lp
+#' @export
 nsp <- function(x, constraints, M, thresh, overlap = FALSE, buffer = 0) {
 	
-	# Generic NSP function. Do not use unless you know what 'thresh' value to set. Use one of the nsp_* functions below (without _selfnorm) instead.
-	# x - data (referred to in the paper as Y).
-	# constraints - design matrix (referred to in the paper as X).
-	# M - number of intervals to draw; this implementation uses a deterministic equispaced grid for drawing intervals.
-	# thresh - threshold value (lambda_alpha in the paper).
-	# overlap - FALSE means no overlap, TRUE means an overlap as specified in Section 4 of the paper.
-	# buffer - set to zero if no autoregression present in constraints; otherwise set to the order of the autoregression.
+	#  
+	# x - 
+	# constraints - 
+	# M - 
+	# thresh - 
+	# overlap - 
+	# buffer - 
 	#
 	# Returns:
-	# object of a class with the following two fields -
-	#
-	# intervals - data frame whose first two columns are start- and end-points (respectively) of the detected intervals of significance;
-	#    the third column are the corresponding dyadic multiresolution sup-norms.
-	# threshold.used - thresh.
+
 	
 	d <- dim(constraints)
 	
