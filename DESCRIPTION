@@ -4,10 +4,12 @@ Title: Narrowest Significance Pursuit and change-points inference in linear mode
 Version: 0.1.0
 Date: 2020-12-02
 Author: P. Fryzlewicz
-Maintainer: P. Fryzlewicz
+Maintainer: P. Fryzlewicz <foo@foo>
 Description: Narrowest Significance Pursuit (NSP) is a general and flexible
-methodology for automatically detecting localised regions in data sequences
-which each must contain a change-point, at a prescribed global significance level.
+  methodology for automatically detecting localised regions in data sequences
+  which each must contain a change-point, at a prescribed global significance 
+  level.
 License: TODO
 Imports:
   lpSolve
+RoxygenNote: 7.1.1
